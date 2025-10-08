@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Xadrez Minimalista</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1f8ef1" />
+</head>
+<body>
+  <h1>Xadrez Minimalista</h1>
+  <p>Instalável e offline (PWA).</p>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
